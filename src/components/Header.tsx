@@ -31,7 +31,7 @@ export const Header = ({ className }: HeaderProps) => {
             : 'py-6 dark:bg-transparent'
         } sticky top-0 z-30 transition-all ${
           pathname === '/' && 'bg-[#fef9f5]'
-        }`,
+        } font-aaux`,
         className
       )}
     >

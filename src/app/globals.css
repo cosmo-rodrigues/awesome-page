@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Aaux ProBlack';
+  src: url('../fonts/AauxProBlackRegular.ttf');
+}
  
 
 @layer base {
