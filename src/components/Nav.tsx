@@ -15,9 +15,9 @@ interface NavProps extends ComponentProps {
 }
 
 const links = [
-  { path: '/app', name: 'Inicio' },
-  { path: '/app/links', name: 'Links' },
-  { path: '/app/configs', name: 'Configurações' },
+  { path: '/home', name: 'home' },
+  { path: '/project', name: 'project' },
+  { path: '/sales', name: 'sales' },
 ];
 
 export const Nav = ({
@@ -32,7 +32,7 @@ export const Nav = ({
         <Link
           href={link.path}
           key={index}
-          className={`capitalize ${linkStyles} ${
+          className={`uppercase ${linkStyles} ${
             link.path === path && 'font-bold'
           }`}
         >

@@ -10,8 +10,13 @@ interface LogoProps extends ComponentProps {}
 export const Logo = ({ className }: LogoProps) => {
   return (
     <Link href='/' className={cn(`flex items-end gap-2 ${className}`)}>
-      {/* <Image src='/pin_logo.png' height={40} width={40} alt='logo' priority /> */}
-      <p className='font-extrabold text-2xl'>NATIIVIO&#8482;</p>
+      <Image
+        src='/natiivio_logo.svg'
+        height={32}
+        width={228}
+        alt='logo'
+        priority
+      />
     </Link>
   );
 };
