@@ -75,6 +75,9 @@ const config = {
       fontFamily: {
         aaux: ['Aaux ProBlack', 'sans-serif'],
       },
+      backgroundImage: {
+        default: 'url(/home_build_bg.svg)',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
