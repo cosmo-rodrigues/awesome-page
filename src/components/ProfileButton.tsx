@@ -5,14 +5,14 @@ export const ProfileButton = () => {
   const router = useRouter();
 
   const handleSignOut = () => {
-    console.log('Desconectando');
+    console.log('Desconectando...');
   };
 
   return (
     <Shad.DropdownMenu>
       <Shad.DropdownMenuTrigger asChild>
-        <Shad.Avatar className='cursor-pointer'>
-          <Shad.AvatarImage src='/avatar.webp' alt='@shadcn' />
+        <Shad.Avatar className='cursor-pointer h-[48px] w-[48px]'>
+          <Shad.AvatarImage src='/profile_level.svg' alt='profile' />
           <Shad.AvatarFallback>SC</Shad.AvatarFallback>
         </Shad.Avatar>
       </Shad.DropdownMenuTrigger>
@@ -28,9 +28,6 @@ export const ProfileButton = () => {
         <Shad.DropdownMenuSeparator />
         <Shad.DropdownMenuGroup onClick={() => router.push('/profile')}>
           <Shad.DropdownMenuItem>Perfil</Shad.DropdownMenuItem>
-        </Shad.DropdownMenuGroup>
-        <Shad.DropdownMenuGroup onClick={() => router.push('/home')}>
-          <Shad.DropdownMenuItem>home</Shad.DropdownMenuItem>
         </Shad.DropdownMenuGroup>
         <Shad.DropdownMenuSeparator />
         <Shad.DropdownMenuItem onClick={handleSignOut}>

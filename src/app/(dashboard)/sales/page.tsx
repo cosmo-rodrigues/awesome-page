@@ -1,7 +1,12 @@
+import { Hero } from '@/components/Hero';
 import React from 'react';
 
 const Sales = () => {
-  return <div>Sales</div>;
+  return (
+    <Hero>
+      <div>Sales</div>
+    </Hero>
+  );
 };
 
 export default Sales;
