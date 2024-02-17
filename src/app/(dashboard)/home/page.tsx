@@ -4,7 +4,7 @@ import React from 'react';
 const Home = () => {
   return (
     <Hero>
-      <div>Home</div>
+      <div className="h-[50vh] w-[50vw] bg-red-400">Home</div>
     </Hero>
   );
 };
