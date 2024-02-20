@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { cn } from "@/lib/utils";
-import { usePathname } from "next/navigation";
+import { cn } from '@/lib/utils';
+import { usePathname } from 'next/navigation';
 
-import * as MyComponents from ".";
-import { ComponentProps } from "@/types/component-props";
+import * as MyComponents from '.';
+import { ComponentProps } from '@/types/component-props';
 
 interface HeaderProps extends ComponentProps {}
 
@@ -15,7 +15,7 @@ export const Header = ({ className }: HeaderProps) => {
     <header
       className={cn(
         `sticky top-0 z-30 py-6 transition-all ${
-          pathname === "/" && "bg-[#fef9f5]"
+          pathname === '/' && 'bg-[#fef9f5]'
         } font-aaux`,
         className,
       )}

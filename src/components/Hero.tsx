@@ -8,14 +8,8 @@ interface HeroProps extends ComponentProps {}
 
 export const Hero = ({ children, className }: HeroProps) => {
   return (
-    <main
-      className={cn(
-        `bg-hero h-[84vh] bg-cover bg-bottom bg-no-repeat ${className}`,
-      )}
-    >
-      <div className="container mx-auto">
-        <>{children}</>
-      </div>
+    <main className={cn(`bg-hero bg-cover bg-no-repeat ${className}`)}>
+      {children}
     </main>
   );
 };

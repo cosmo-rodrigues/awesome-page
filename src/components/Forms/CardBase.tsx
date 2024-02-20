@@ -20,13 +20,13 @@ export function CardBase({ className, children }: CardBaseProps) {
       transition={{ duration: 1, ease: 'easeOut' }}
       className={cn(`rounded-lg bg-black bg-opacity-50 ${className}`)}
     >
-      <div className="flex h-[80vh] w-[70vw] gap-x-2 p-0 sm:p-10">
-        <Card className="hidden h-full w-[70vw] border-none bg-transparent lg:flex">
+      <div className="flex w-[70vw] gap-x-2 p-0 sm:p-10">
+        <Card className="hidden h-full w-[60vw] border-none bg-transparent lg:flex">
           <Image
             alt="Build"
             width={0}
             height={0}
-            style={{ width: '100%', height: 'auto' }}
+            style={{ width: '100%', height: 'fit-content' }}
             src="/login_build.svg"
           />
         </Card>

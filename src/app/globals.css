@@ -64,3 +64,42 @@
     @apply bg-background text-foreground;
   }
 }
+
+.reflection { 
+  bottom: 20%; 
+  color: white; 
+  font-size: 40px;
+  left: 30%; 
+  position: absolute; 
+  width: 520px;
+} 
+.reflection::after { 
+  margin: 0;
+  margin-top: -10px;
+  content: attr(data-text); 
+  animation: fadein 4s;
+  animation-delay: 0.5ms;
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+/* Change the position of transformed element */
+  transform-origin: bottom; 
+/*  Rotates around x-axis */
+  transform: rotateX(180deg); 
+  line-height: 0.85em; 
+/* linear-gradient defined by up,down,left ,right ,diagonal */
+  background-image: linear-gradient(0deg, #ffffff 0, transparent 95%); 
+  -webkit-background-clip: text; 
+  color: transparent;          
+  opacity: 0.7;
+  width: fit-content;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
